@@ -17,11 +17,11 @@ namespace DeepKacha_23SOECE11022
 
             if (x % 2 == 0)
             {
-                Console.WriteLine("Even");
+                Console.WriteLine("Number Is Even");
             }
             else
             {
-                Console.WriteLine("odd");
+                Console.WriteLine("Number Is odd");
             }
             Console.Read();
         }

@@ -25,7 +25,7 @@ namespace DeepKacha_23SOECE11022
                 i++; //Increment by one
             }
             Console.ReadLine();
-        }
+        }   
 
     }
 }
