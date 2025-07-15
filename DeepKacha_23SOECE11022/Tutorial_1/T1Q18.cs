@@ -20,7 +20,6 @@ namespace DeepKacha_23SOECE11022
                     k++;
                 }
                 Console.WriteLine(); // Move to the next line after each row
-                Console.WriteLine();
             }
         }
     }
