@@ -15,6 +15,5 @@ namespace DeepKacha_23SOECE11022
 			string marked = input.Substring(0, input.Length - 5) + new string('X', 5);
 			Console.WriteLine("Masked Number: " + marked);
 		}
-
 	}
 }
