@@ -32,7 +32,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.Enroll = new System.Windows.Forms.Label();
-            this.Name = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.City = new System.Windows.Forms.Label();
             this.Age = new System.Windows.Forms.Label();
             this.txtEnroll = new System.Windows.Forms.TextBox();
@@ -40,7 +40,7 @@
             this.txtAge = new System.Windows.Forms.TextBox();
             this.txtCity = new System.Windows.Forms.TextBox();
             this.Insert = new System.Windows.Forms.Button();
-            this.Update = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
             this.Reset = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -73,15 +73,15 @@
             this.Enroll.Text = "Enroll NO.";
             this.Enroll.Click += new System.EventHandler(this.Enroll_Click);
             // 
-            // Name
+            // lblName
             // 
-            this.Name.AutoSize = true;
-            this.Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name.Location = new System.Drawing.Point(118, 146);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(48, 18);
-            this.Name.TabIndex = 3;
-            this.Name.Text = "Name";
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(118, 146);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(48, 18);
+            this.lblName.TabIndex = 3;
+            this.lblName.Text = "Name";
             // 
             // City
             // 
@@ -111,6 +111,7 @@
             this.txtEnroll.Name = "txtEnroll";
             this.txtEnroll.Size = new System.Drawing.Size(229, 22);
             this.txtEnroll.TabIndex = 6;
+            this.txtEnroll.TextChanged += new System.EventHandler(this.txtEnroll_TextChanged);
             // 
             // txtName
             // 
@@ -144,16 +145,16 @@
             this.Insert.UseVisualStyleBackColor = true;
             this.Insert.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Update
+            // btnUpdate
             // 
-            this.Update.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Update.Location = new System.Drawing.Point(228, 323);
-            this.Update.Name = "Update";
-            this.Update.Size = new System.Drawing.Size(75, 23);
-            this.Update.TabIndex = 11;
-            this.Update.Text = "Update";
-            this.Update.UseVisualStyleBackColor = true;
-            this.Update.Click += new System.EventHandler(this.button2_Click);
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(228, 323);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 11;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.button2_Click);
             // 
             // Delete
             // 
@@ -184,7 +185,7 @@
             this.ClientSize = new System.Drawing.Size(592, 450);
             this.Controls.Add(this.Reset);
             this.Controls.Add(this.Delete);
-            this.Controls.Add(this.Update);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.Insert);
             this.Controls.Add(this.txtCity);
             this.Controls.Add(this.txtAge);
@@ -192,7 +193,7 @@
             this.Controls.Add(this.txtEnroll);
             this.Controls.Add(this.Age);
             this.Controls.Add(this.City);
-            this.Controls.Add(this.Name);
+            this.Controls.Add(this.lblName);
             this.Controls.Add(this.Enroll);
             this.Controls.Add(this.label1);
             this.Name = "Form2";
@@ -208,7 +209,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Enroll;
-        private System.Windows.Forms.Label Name;
+        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label City;
         private System.Windows.Forms.Label Age;
         private System.Windows.Forms.TextBox txtEnroll;
@@ -216,7 +217,7 @@
         private System.Windows.Forms.TextBox txtAge;
         private System.Windows.Forms.TextBox txtCity;
         private System.Windows.Forms.Button Insert;
-        private System.Windows.Forms.Button Update;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button Delete;
         private System.Windows.Forms.Button Reset;
     }
